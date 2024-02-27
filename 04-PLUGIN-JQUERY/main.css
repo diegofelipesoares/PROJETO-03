@@ -1,0 +1,72 @@
+/*reset dos padrões default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html {
+    /* Tirando barra de rolagem lateral adquirida por conta de se usar
+    o carrossel de fotos
+    Todo conteúdo que passar o tamanho de tela na horizontal 
+    não será visível */
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto; /*centralizar container automaticamente*/
+   
+}
+
+header{
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+/*Menu de Navegação*/
+nav{
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none; /*removendo bullets (pontos da lista) */
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*criando icone do menu hamburguer*/
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/*colocando o icone hamburguer na lateral */
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alinhando itens na vertical */
+    padding-bottom: 16px;
+}

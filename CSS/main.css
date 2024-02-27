@@ -1,0 +1,79 @@
+*{box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body > header{
+    background-color: #626466;
+    padding: 16px 0;
+    color:white;
+}
+
+header .container {
+    display: flex;
+    /*alinhando intens do menu*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header li{
+    display: inline;
+}
+
+header li a{
+    color: white ; 
+
+}
+
+/*container para ajustar tamanho lateral da pagina*/
+.container{
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+
+/*vamos criar div para conter os artigos.
+Colocamos o display de flex para ficar uma o lado do outro*/
+.articles{
+    display: flex;
+    flex-wrap: wrap; /*para que não aloque mais espaço 
+    entre os artigos, dando +de 100% do espaço, desce para 
+    próxima linha */
+    justify-content:space-between; /*aloca espaço entre
+    os "div articles"*/
+}
+
+/*vamos definir a altura de todas as imagens dentro do artigo*/
+.articles article img{
+height: 180px;
+}
+
+/*definir largura dos artigos*/
+.articles article{
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+/*aplicando espaçamento*/
+section h2, .articles article{
+    margin-bottom: 19px;
+}
+
+/*espaçamento no título*/
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* dar aos links um aspecto de botão
+A tag a por padrão tem display inline, isso faz o padding
+ficar por cima do texto - resolve usando display inline-block  */
+.articles article a{
+    background-color: blue;
+    color:aliceblue;
+    padding: 8px;
+    display: inline-block;
+}

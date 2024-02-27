@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+ }
+ 
+ 
+ header{
+    background-color: blueviolet;
+    padding: 16px 0;
+    color: #fff;
+    display: flex; /*deixando botão ao lado do título */
+    border-bottom: solid 16px #360065;
+    justify-content: center; /*centralizando os elementos do header*/
+ }
+ 
+ 
+ header button{
+    margin-left: 16px;
+    text-transform: uppercase; /*deixando as letras em maiúsculo*/
+    font-style: italic;
+ }
+ 
+ 
+ form{
+    background-color: rgb(196, 196, 196);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+ }
+ 
+ 
+ form h2{
+    margin-bottom: 16px ;
+ }
+ 
+ 
+ input, button{
+    padding: 8px;
+ }
+ 
+ 
+ button{
+    background-color: #009432;
+    border: none;
+    cursor: pointer; /* alterar cursos para mão no botão */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+ }
+ 
+ 
+ #botao-cancelar{
+    background-color: red;
+ }
+ 
